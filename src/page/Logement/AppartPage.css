@@ -1,0 +1,50 @@
+.AppartPage {
+color: #ff6060;
+}
+
+
+.AppartPage h1 {
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 36px;
+    }
+
+.AppartPage img {
+border-radius: 6rem;
+box-shadow: rgb(149, 157, 165 / 20%);
+    }
+
+.AppartPage h2 {
+    font-weight: 500;
+    margin-top: 0.14rem;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    color: black;
+}
+
+.AppartPage h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 18px;
+    font-weight: 500;
+    
+    }
+
+
+
+.Bottom_area {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Bottom_area {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,25 @@
+.Card {
+    background-color: rgba(131, 119, 119, 0.212);
+    margin-top: 30px;
+    min-height: 50vh;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.Card > * {
+    /* CSS pour les enfants directs de .Card */
+    width: 100%;
+    max-width: 20rem;
+}
+
+@media screen and (width <= 768px) {
+    .Card {
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+}

@@ -1,0 +1,13 @@
+.Aboutbanner {
+    max-width: 100vw;
+    padding-inline: 4.5rem;
+    background-position: center;
+    background-size: cover;
+    min-height: 140px;
+    max-width: 100%;
+   margin-bottom: 2rem;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    color: white;
+}
