@@ -9,6 +9,8 @@ import './page/Accueil/App.css';
 import AppartPage from './page/Logement/AppartPage';
 import ErrorPage from './page/Error/ErrorPage';
 
+import './index.css';
+
 import {
   createBrowserRouter,
   RouterProvider,

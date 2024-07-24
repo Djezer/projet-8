@@ -10,8 +10,7 @@
 }
 
 .Appart_Tags {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,110px));
+    display: flex;
     gap: 1rem;
     text-align: center;
 }
@@ -21,6 +20,8 @@
     color: white;
     padding: .2rem 1rem;
     border-radius: .7rem;
+    min-width: 115px;
+    width: fit-content;
 }
 
 .Appart_Owner {
@@ -54,18 +55,17 @@
     color: #ff6060;
 }
 
-
 /* Media query pour les écrans de largeur inférieure ou égale à 768px */
 @media screen and (max-width: 768px) {
     .Appart_Info {
         flex-direction: column;
     }
 
-    .Appart_Owner{
+    .Appart_Owner {
         order: 1;
     }
 
-    .Appart_statut{
+    .Appart_statut {
         flex-direction: row;
         justify-content: space-between;
     }

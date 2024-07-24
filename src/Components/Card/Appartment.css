@@ -1,14 +1,17 @@
 /* Appartment.css */
+.Appartment-link {
+    width: 340px;
+    height: 340px;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+}
 
 .Appartment {
     border-radius: 1rem;
-    flex-basis: 30%;
-    display: grid;
-    align-items: end;
-    min-width: 200px;
-    min-height: 200px;
-    background-size: cover;
     position: relative;
+    width: 340px;
+    height: 340px;
 }
 
 .Appartment img {
@@ -18,15 +21,26 @@
     border-radius: 1rem;
 }
 
-.Appartment a {
-    text-decoration: none;
-}
-
-.Card_Title {
-    width: 100%; /* Ajustez la largeur selon vos besoins */
-    margin: 0.5rem;
+.Appartment h2 {
+    width: 100%;
+    /* Ajustez la largeur selon vos besoins */
+    font-size: 16px;
     color: white;
     position: absolute;
-    bottom: 0; /* Positionne le titre au bas */
-    left: 0; /* Positionne le titre au début */
+    bottom: 0;
+    /* Positionne le titre au bas */
+    left: 5px;
+    /* Positionne le titre au début */
+}
+
+@media (max-width: 767.90px) {
+    .Appartment-link {
+        width: 100%;
+        height: 255px;
+    }
+
+    .Appartment {
+        width: 100%;
+        height: 255px;
+    }
 }

@@ -1,0 +1,47 @@
+.Appartment_description {
+    flex-basis: 50%;
+}
+
+.Appartment_description p {
+    margin-block: 0rem;
+}
+
+.Description_title {
+    background-color: #ff6060;
+    color: white;
+    padding: 0.2em 1rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+.Description_title i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    /* Ajoute une transition pour la rotation */
+}
+
+.Description_title i.rotate {
+    transform: rotate(180deg);
+    /* Rotation de 180 degrés */
+}
+
+.Description_content {
+    background-color: rgba(131, 119, 119, 0.164);
+    color: black;
+    padding: 1rem;
+    border-radius: 0 0 1rem;
+    position: relative;
+    top: -0.3rem;
+    z-index: -1;
+    animation: collapse 0.5s ease-in-out;
+}
+
+@keyframes collapse {
+    from {
+        transform: translateY(-60%);
+    }
+}

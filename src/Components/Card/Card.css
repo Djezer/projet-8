@@ -1,25 +1,30 @@
+/* Conteneur des cartes */
 .Card {
-    background-color: rgba(131, 119, 119, 0.212);
-    margin-top: 30px;
-    min-height: 50vh;
+    background-color: #f6f6f6;
+    /* Zone grise derrière les cartes */
+    margin: 20px auto;
+    /* Centre le conteneur */
     border-radius: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    /* Bordure arrondie */
+    display: flex;
+    flex-wrap: wrap;
+    /* 3 colonnes sur les grands écrans */
+    gap: 2rem;
+    /* Espacement entre les cartes */
+    padding: 30px;
+    /* Padding autour des cartes */
+    width: 95%;
+    /* Largeur du conteneur ajustée pour plus de flexibilité */
+    max-width: 1600px;
+    /* Largeur maximale étendue */
+    box-sizing: border-box;
+    /* Inclut le padding dans la largeur totale */
     justify-content: center;
 }
 
-.Card > * {
-    /* CSS pour les enfants directs de .Card */
-    width: 100%;
-    max-width: 20rem;
-}
-
-@media screen and (width <= 768px) {
+@media (max-width: 767.90px) {
     .Card {
-        justify-content: center;
-        background-color: white;
-        padding: 0;
+        padding: 20px;
+        flex-direction: column;
     }
 }

@@ -7,21 +7,21 @@ function Card() {
 
   useEffect(fetchCard, [])
 
-  function fetchCard (){
+  function fetchCard() {
     fetch("kasa.json")
       .then((res) => res.json())
       .then((res) => setCard(res))
       .catch(console.error);
-  } 
-   
+  }
+
   return (
     <div className='Card'>
       {cards.map((card) => (
         <Appartment
-          key={card.id} 
-          title={card.title} 
-          imagecard={card.cover} 
-          id={card.id} 
+          key={card.id}
+          title={card.title}
+          imagecard={card.cover}
+          id={card.id}
         />
       ))}
     </div>

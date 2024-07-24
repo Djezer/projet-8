@@ -1,17 +1,16 @@
-import React from 'react'
-import HomeBanner from '../../Components/Banner/HomeBanner.jsx'
-import Card from '../../Components/Card/Card.jsx'
+import React from 'react';
+import HomeBanner from '../../Components/Banner/HomeBanner.jsx';
+import Card from '../../Components/Card/Card.jsx';
 
-
-import "./App.css"
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <main>
       <HomeBanner />
       <Card />
-    </div>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;

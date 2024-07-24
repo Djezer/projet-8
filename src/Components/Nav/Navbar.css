@@ -1,32 +1,39 @@
+/* Conteneur principal de la barre de navigation */
 .Navbar {
     display: flex;
-    gap: 3rem;
     align-items: center;
+    justify-content: space-between;
+    /* Espace entre les éléments */
     padding: 0.2rem;
     font-weight: 600;
-    margin-bottom: 35px;
-    margin-top: 20px;
-    margin-left: 35px;
-    margin-right: 38px;
-    
+    margin: 20px auto 35px;
+    /* Centre verticalement et ajoute les marges */
+    width: 90%;
+    /* Utilise 90% de la largeur disponible */
+    max-width: 1240px;
+    /* Limite la largeur maximale */
+    height: 68px;
+    /* Hauteur fixe */
+    box-sizing: border-box;
+    /* Inclut le padding et la bordure dans la largeur totale */
 }
 
+/* Styles pour les liens de navigation */
 .Navbar a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    margin-right: 20px;
+    /* Espace entre les liens */
 }
 
-
+/* Style pour le lien actif */
 .Navbar a.active {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* Style pour le logo */
 .Navbar_logo {
     margin-right: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .Navbar a {
-        text-transform: uppercase;
-    }
+    /* Pousse les autres éléments vers la droite */
 }

@@ -1,12 +1,14 @@
 .Container {
-    padding-inline: 2rem;
-    margin-bottom: 3rem;
-    min-height: 70vh;
+  padding: 0 2rem;
+  /* Ajoute du padding gauche et droite */
+  margin-bottom: 3rem;
+  min-height: 70vh;
+  box-sizing: border-box;
+  /* Inclut le padding et la bordure dans la largeur totale */
 }
 
 @media screen and (max-width: 768px) {
-    body {
-      padding: 1rem;
-    }
+  body {
+    padding: 1rem;
   }
-  
+}

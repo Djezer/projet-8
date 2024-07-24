@@ -1,10 +1,13 @@
 import React from 'react'
 import "./AboutBanner.css"
+import About from '../../assets/Banniere/Banner2.jpg'
 
 function AboutBanner() {
   return (
     <div className='Aboutbanner'>
-       <img src="" alt="" />
+      <div className='About'>
+        <img src={About} alt="Bannière" />
+      </div>
     </div>
   )
 }
