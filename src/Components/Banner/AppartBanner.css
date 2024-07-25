@@ -1,8 +1,57 @@
-.Appartbanner img {
+/* AppartBanner.css */
+.AppartBanner {
+    position: relative;
     width: 100%;
-    height: 20rem;
-    margin-bottom: 1rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 350px;
+    /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 2rem;
+    filter: brightness(90%);
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
-    box-shadow: rgb(149, 157, 165 / 20%);
-        }
+    /* Remplit le conteneur tout en gardant le ratio */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-counter {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    /* Ajustez la taille de la police selon vos besoins */
+    color: white;
+    z-index: 1;
+    background-color: transparent;
+    /* Assurez-vous qu'il n'y a pas de fond */
+}

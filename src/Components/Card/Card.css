@@ -24,7 +24,7 @@
 
 @media (max-width: 767.90px) {
     .Card {
-        padding: 20px;
+        padding: 0px;
         flex-direction: column;
     }
 }

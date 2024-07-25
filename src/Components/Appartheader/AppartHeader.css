@@ -1,8 +1,13 @@
 /* Styles de base */
 .Appart_Info {
     display: flex;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
     gap: 1rem;
+}
+
+.Appart_Info img {
+    border-radius: 6rem;
 }
 
 .Appart_Title_Container {
@@ -68,5 +73,26 @@
     .Appart_statut {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .Appart_Tags {
+        flex-wrap: wrap;
+        /* Permet aux étiquettes de se répartir sur plusieurs lignes si nécessaire */
+        gap: 0.5rem;
+        /* Réduit l'espacement entre les étiquettes */
+    }
+
+    .Appart_Tags span {
+        padding: 0.1rem 0.5rem;
+        /* Réduit la taille du padding pour les étiquettes */
+        font-size: 1.1rem;
+        /* Réduit la taille de la police pour les étiquettes */
+        min-width: 90px;
+        /* Réduit la largeur minimale des étiquettes */
+    }
+
+    .Appart_rate {
+        margin-top: 2.5rem;
+        /* Ajoute une marge supérieure pour déplacer l'élément vers le bas */
     }
 }
