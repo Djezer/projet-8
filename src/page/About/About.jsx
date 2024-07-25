@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutBanner from '../../Components/Banner/AboutBanner.jsx'
+import AboutBanner from '../../Components/Aboutbanner/AboutBanner.jsx'
 import Description from '../../Components/description/Description.jsx'
 import "./About.css"
 

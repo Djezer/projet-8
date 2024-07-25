@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import "./AppartPage.css";
 import Description from '../../Components/description/Description.jsx';
-import AppartBanner from '../../Components/Banner/AppartBanner.jsx';
+import AppartBanner from '../../Components/Appartbanner/AppartBanner.jsx';
 import AppartHeader from '../../Components/Appartheader/AppartHeader.jsx';
 import { useNavigate, useParams } from 'react-router-dom';
 

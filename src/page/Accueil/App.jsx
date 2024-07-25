@@ -1,5 +1,5 @@
 import React from 'react'; // Importation de la bibliothèque React
-import HomeBanner from '../../Components/Banner/HomeBanner.jsx'; // Importation du composant HomeBanner pour la bannière de la page d'accueil
+import HomeBanner from '../../Components/Homebanner/HomeBanner.jsx'; // Importation du composant HomeBanner pour la bannière de la page d'accueil
 import Card from '../../Components/Card/Card.jsx'; // Importation du composant Card pour afficher des cartes de contenu
 import "./App.css"; // Importation du fichier CSS pour les styles spécifiques à ce composant
 

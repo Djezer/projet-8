@@ -1,4 +1,3 @@
-// AppartBanner.jsx
 import React, { useState } from 'react';
 import './AppartBanner.css';
 import ArrowR from '../../assets/Carrousel/flech-right.png';
@@ -29,24 +28,30 @@ function AppartBanner({ images = [] }) {
   // Rendu du composant
   return (
     <div className='AppartBanner'> {/* Conteneur principal avec la classe CSS 'AppartBanner' */}
-      <img
-        src={ArrowL}
-        alt="Previous"
-        className='carousel-button prev'
-        onClick={goToPrevious} // Gestionnaire d'événements pour la flèche gauche
-      />
+      {images.length > 1 && ( // Affiche les flèches de navigation seulement s'il y a plus d'une image
+        <img
+          src={ArrowL}
+          alt="Previous"
+          className='carousel-button prev'
+          onClick={goToPrevious} // Gestionnaire d'événements pour la flèche gauche
+        />
+      )}
       <div className='carousel-container'> {/* Conteneur pour l'image du carrousel */}
         <img src={images[currentIndex]} alt="Appartement" className='carousel-image' /> {/* Image de l'appartement */}
       </div>
-      <img
-        src={ArrowR}
-        alt="Next"
-        className='carousel-button next'
-        onClick={goToNext} // Gestionnaire d'événements pour la flèche droite
-      />
-      <div className='carousel-counter'> {/* Compteur pour l'image courante */}
-        {currentIndex + 1}/{images.length}
-      </div>
+      {images.length > 1 && ( // Affiche les flèches de navigation seulement s'il y a plus d'une image
+        <img
+          src={ArrowR}
+          alt="Next"
+          className='carousel-button next'
+          onClick={goToNext} // Gestionnaire d'événements pour la flèche droite
+        />
+      )}
+      {images.length > 1 && ( // Affiche le compteur seulement s'il y a plus d'une image
+        <div className='carousel-counter'> {/* Compteur pour l'image courante */}
+          {currentIndex + 1}/{images.length}
+        </div>
+      )}
     </div>
   );
 }
